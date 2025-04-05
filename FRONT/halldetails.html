@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Exam Hall</title>
+    <link rel="stylesheet" href="halldetails.css">
+</head>
+<script src="main.js"></script>
+
+<body>
+    <div class="form-container">
+        <h2 style="color: wheat;">Add Exam Hall</h2>
+        <form action="admindash.html" method="POST">
+            <div class="input-group">
+                <label for="hall_name">DEPARTMENT NAME</label>
+                <input type="text" id="dept_name" name="dept_name" placeholder="Enter department name" required>
+            </div>
+            <div class="input-group">
+                <label for="hall_id">CLASS NAME</label>
+                <input type="text" id="class_name" name="class_name" placeholder="Enter class name" required>
+            </div>
+            <div class="input-group">
+                <label for="capacity">NUMBER OF BENCHES</label>
+                <input type="number" id="no_of_benches" name="no_of_benches" placeholder="Enter number of benches" required>
+            </div>
+            <div class="input-group">
+                <label for="floor">BENCH CAPACITY</label>
+                <input type="number" id="bench_capacity" name="bench_capacity" placeholder="Enter bench capacity" required>
+            </div>
+            <button type="submit" class="form-btn">Add Hall</button>
+            <a href="admindash.html" class="back-btn">Back to Dashboard</a>
+        </form>
+    </div>
+</body>
+</html>

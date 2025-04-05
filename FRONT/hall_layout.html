@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Layout</title>
+</head>
+<script src="main.js"></script>
+
+<body>
+    <h2 id="hallTitle"></h2>
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let hallName = urlParams.get('hall');
+
+        document.getElementById("hallTitle").innerText = "Hall Layout for " + hallName;
+
+        // Here, you can dynamically generate the seating chart for the selected hall
+    </script>
+</body>
+</html>
